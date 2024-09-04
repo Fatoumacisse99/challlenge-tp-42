@@ -1,3 +1,4 @@
+<!-- APP.vue -->
 <template>
   <div class="container-fluid">
     <router-link to="/" />
