@@ -40,3 +40,23 @@ const router = createRouter({
 });
 
 export default router;
+
+// router/index.js
+// import { createRouter, createWebHistory } from 'vue-router';
+// import ListeRecette from '../components/ListeRecette.vue';
+// import AjoutRecette from '../components/AjoutRecette.vue';
+// import ModifieRecette from '../components/ModifieRecette.vue';
+
+// const routes = [
+//   { path: '/', redirect: '/recette-list' },
+//   { path: '/recette-list', component: ListeRecette },
+//   { path: '/recette/new', component: AjoutRecette },
+//   { path: '/recette/edit/:id', component: ModifieRecette, props: true },
+// ];
+
+// const router = createRouter({
+//   history: createWebHistory(),
+//   routes,
+// });
+
+// export default router;

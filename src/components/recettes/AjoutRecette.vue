@@ -18,6 +18,10 @@
           <option value="plat">Plat</option>
         </select>
       </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">URL de l'image</label>
+        <input type="text" class="form-control" id="image" v-model="image" />
+      </div>
       <button class="btn btn-success">Ajouter</button>
     </form>
   </div>
@@ -34,9 +38,15 @@ const router = useRouter();
 const titre = ref('');
 const ingredients = ref('');
 const type = ref('dessert');
+const image = ref(''); // Ajout d'une ref pour l'URL de l'image
 
 const onSubmit = () => {
-  store.add({ titre: titre.value, ingredients: ingredients.value, type: type.value });
+  store.add({
+    titre: titre.value,
+    ingredients: ingredients.value,
+    type: type.value,
+    image: image.value // Inclure l'URL de l'image
+  });
   router.push('/recette-list');
 };
 </script>

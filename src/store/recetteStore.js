@@ -1,20 +1,22 @@
-import { defineStore } from 'pinia';
-import { reactive } from 'vue';
+import { defineStore } from "pinia";
+import { reactive } from "vue";
 
-export const useRecetteStore = defineStore('recetteStore', {
+export const useRecetteStore = defineStore("recetteStore", {
   state: () => ({
     recettes: reactive([
       {
         id: 1,
-        titre: 'Crêpe Nutella',
-        ingredients: 'Farine, lait, oeuf, beurre, sucre',
-        type: 'Dessert',
+        titre: "Crêpe Nutella",
+        ingredients: "Farine, lait, oeuf, beurre, sucre",
+        type: "Dessert",
+        image: "/src/assets/images/chocolat.jpg",
       },
       {
         id: 2,
-        titre: 'Lasagne',
-        ingredients: 'Viande, tomate, feuille de lasagnes, béchamel',
-        type: 'Plat',
+        titre: "Lasagne",
+        ingredients: "Viande, tomate, feuille de lasagnes, béchamel",
+        type: "Plat",
+        image: "/src/assets/images/chocolat.jpg",
       },
     ]),
   }),
